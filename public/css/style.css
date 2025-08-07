@@ -1,0 +1,80 @@
+.navbar {
+   height: 5rem; 
+   background-color: white ;
+}
+
+.fa-feather-pointed {
+   color: red;
+   font-size: 2rem ;
+}
+.nav-link{
+    color: #222222 !important;
+}
+.f-info-links a:hover{
+      text-decoration: underline;
+}
+.f-info-links , .f-info-socials, .f-info-brand   {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    margin-right: 1rem;
+     font-size: 1.2rem;
+}
+.f-info{
+    text-align: center;
+    height: 8rem;
+    display: flex;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% ;
+    height: 20rem;
+    object-fit: cover !important;
+}
+.card-body {
+    padding: 1rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card-img-overlay-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(4px); /* adds the blur effect */
+  z-index: 2;
+}
+
+/* Show overlay on hover */
+.card-img-wrapper:hover .card-img-overlay-custom {
+  opacity: 0.2;
+}
+
+.show-img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 1rem;
+}

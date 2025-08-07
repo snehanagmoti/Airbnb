@@ -1,0 +1,55 @@
+<% layout("/layouts/bolierplate")%>
+ 
+  <div class="row">
+    <div class="col-8 offset-2">
+      <br /><br />
+       <h3>Create New Listing</h3>
+  <form method="POST" action="/listings" novalidate class="needs-validation">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input name="listing[title]" placeholder="Enter title" type="text" class="form-control" required />
+    <div class="valid-feedback">
+      Title looks good!
+    </div>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea name="listing[description]" class="form-control" required></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="image" class="form-label">Image</label>
+      <input name="listing[image][url]" placeholder="Enter image URL" type="text" class="form-control" />
+    </div>
+    <div class="row">
+    <div class="mb-3 col-md-4" >
+      <label for="price" class="form-label">Price</label>
+      <input name="listing[price]" placeholder="Enter price" type="number   " class="form-control" required />
+    <div class="invalid-feedback">
+      price should be valid
+    </div>
+    </div>
+
+    <div class="mb-3 col-md-8">
+      <label for="country" class="form-label">Country</label>
+      <input name="listing[country]" placeholder="Enter country" type="text" class="form-control" required />
+    <div class="invalid-feedback">
+      enter country name
+    </div>
+    </div>
+</div>
+
+      <div class="mb-3">
+      <label for="location" class="form-label">Location</label>
+      <input name="listing[location]" placeholder="Enter location" type="text" class="form-control" required/>
+   <div class="invalid-feedback">
+      enter location
+    </div>
+    </div>
+
+     <br /><br />
+    <button class="btn btn-dark">Add</button>
+    <br /><br />
+  </form>
+  </div>
+  </div>
